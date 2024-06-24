@@ -1,0 +1,7 @@
+{
+	"name":"pjsk",
+	"description":"啤酒烧烤角色贴纸生成插件(必须已经安装python)",
+	"author":"swyuuki",
+	"version":"0.0.1",
+	"need_python":true
+}
