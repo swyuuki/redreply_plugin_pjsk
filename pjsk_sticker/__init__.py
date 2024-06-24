@@ -119,7 +119,7 @@ async def stick_maker(chara: str, text: str):
             img = img.convert('RGBA')
             img.save(buf, format='GIF')
             # base64_str = f'base64://{base64.b64encode(buf.getvalue()).decode()}'
-            return f'[CQ:image,file=base64://{base64.b64encode(buf.getvalue()).decode()}]'
+            return f'[CQ:image,file=base64://{base64.b64encode(buf.getvalue()).decode()}]{chara_name}_{chara_id}  '
         else:
             return "贴纸生成失败"
     except Exception as e:
@@ -186,7 +186,7 @@ async def random_stick(text: str):
             img = img.convert('RGBA')
             img.save(buf, format='GIF')
             # base64_str = f'base64://{base64.b64encode(buf.getvalue()).decode()}'
-            return f'[CQ:image,file=base64://{base64.b64encode(buf.getvalue()).decode()}]'
+            return f'[CQ:image,file=base64://{base64.b64encode(buf.getvalue()).decode()}]{chara_name}_{chara_id}  '
         else:
             return "贴纸生成失败"
     except Exception as e:
